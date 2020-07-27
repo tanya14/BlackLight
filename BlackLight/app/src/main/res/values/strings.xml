@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BlackLight</string>
+    <string name="score">Score:</string>
+    <string name="launch">Launch the game</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="quit">Quit</string>
+    <string name="backPressMsg">Press back again to exit</string>
+    <string name="gameOverMsg">Game Over. Your score is: </string>
+</resources>

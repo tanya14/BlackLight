@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGrey"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/scoreTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="@integer/constant1"
+            android:padding="@dimen/margin10dp"
+            android:text="@string/score"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:background="@drawable/textview_border_rectangle"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="@integer/constant2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/constant1">
+
+                <View
+                    android:id="@+id/colorLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toStartOf="@+id/divider1"
+                    android:layout_toLeftOf="@+id/divider1"
+                    android:background="@color/orange" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="@dimen/margin1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/grey" />
+
+                <View
+                    android:id="@+id/colorLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/divider1"
+                    android:layout_toRightOf="@+id/divider1"
+                    android:background="@color/lightBlue" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/constant1">
+
+                <View
+                    android:id="@+id/colorLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toStartOf="@+id/divider2"
+                    android:layout_toLeftOf="@+id/divider2"
+                    android:background="@color/yellow" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="@dimen/margin1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white" />
+
+                <View
+                    android:id="@+id/colorLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/divider2"
+                    android:layout_toRightOf="@+id/divider2"
+                    android:background="@color/greenLite" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
